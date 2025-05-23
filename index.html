@@ -4,11 +4,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <script src="index.js"></script>
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search Facebook">
+            </div>
+        </div>
+
+        <nav class="header-center">
+            <a href="#" class="active"><i class="fas fa-home"></i></a>
+            <a href="#"><i class="fas fa-tv"></i></a>
+            <a href="#"><i class="fas fa-store"></i></a>
+            <a href="#"><i class="fas fa-users"></i></a>
+            <a href="#"><i class="fas fa-gamepad"></i></a>
+        </nav>
+
+        <div class="header-right">
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="messenger-icon">
+                <i class="fas fa-comment-dots"></i>
+            </div>
+            <div class="notifications-icon">
+                <i class="fas fa-bell"></i>
+            </div>
+            <div class="user-avatar">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="left-sidebar">
+            <div class="user-profile">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                <span>John Doe</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#"><i class="fas fa-user-friends"></i> Friends</a>
+                <a href="#"><i class="fas fa-bookmark"></i> Saved</a>
+                <a href="#"><i class="fas fa-flag"></i> Pages</a>
+                <a href="#"><i class="fas fa-calendar-alt"></i> Events</a>
+                <a href="#"><i class="fas fa-users"></i> Groups</a>
+                <a href="#"><i class="fas fa-newspaper"></i> News</a>
+                <a href="#"><i class="fas fa-heart"></i> Fundraisers</a>
+                <a href="#"><i class="fas fa-cog"></i> Settings</a>
+            </nav>
+            <div class="shortcuts">
+                <h3>Your Shortcuts</h3>
+                <a href="#"><img src="https://via.placeholder.com/40" alt="Group 1"> React Developers</a>
+                <a href="#"><img src="https://via.placeholder.com/40" alt="Group 2"> Web Design</a>
+                <a href="#"><img src="https://via.placeholder.com/40" alt="Group 3"> JavaScript</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="stories">
+                <div class="story create-story">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                    <div class="story-content">
+                        <div class="plus-icon"><i class="fas fa-plus"></i></div>
+                        <span>Create Story</span>
+                    </div>
+                </div>
+                <div class="story">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Story 1">
+                    <div class="story-content">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User 1" class="story-user">
+                        <span>Sarah Smith</span>
+                    </div>
+                </div>
+                <div class="story">
+                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Story 2">
+                    <div class="story-content">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="User 2" class="story-user">
+                        <span>Mike Johnson</span>
+                    </div>
+                </div>
+                <div class="story">
+                    <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Story 3">
+                    <div class="story-content">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="User 3" class="story-user">
+                        <span>Emma Wilson</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="create-post">
+                <div class="post-top">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                    <input type="text" placeholder="What's on your mind?">
+                </div>
+                <div class="post-options">
+                    <div class="option">
+                        <i class="fas fa-video" style="color: #f3425f;"></i>
+                        <span>Live Video</span>
+                    </div>
+                    <div class="option">
+                        <i class="fas fa-images" style="color: #45bd62;"></i>
+                        <span>Photo/Video</span>
+                    </div>
+                    <div class="option">
+                        <i class="fas fa-smile" style="color: #f7b928;"></i>
+                        <span>Feeling/Activity</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="posts">
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                        <div class="post-info">
+                            <h4>Sarah Smith</h4>
+                            <span>2 hrs ago <i class="fas fa-globe-americas"></i></span>
+                        </div>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="post-content">
+                        <p>Just finished my new website! Check it out and let me know what you think.</p>
+                        <img src="https://via.placeholder.com/500x300" alt="Post image">
+                    </div>
+                    <div class="post-stats">
+                        <span><i class="fas fa-thumbs-up"></i> 24</span>
+                        <span>5 comments</span>
+                        <span>2 shares</span>
+                    </div>
+                    <div class="post-actions">
+                        <button><i class="far fa-thumbs-up"></i> Like</button>
+                        <button><i class="far fa-comment"></i> Comment</button>
+                        <button><i class="fas fa-share"></i> Share</button>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="User">
+                        <div class="post-info">
+                            <h4>Mike Johnson</h4>
+                            <span>5 hrs ago <i class="fas fa-globe-americas"></i></span>
+                        </div>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="post-content">
+                        <p>Beautiful day for a hike! 🏞️ #nature #outdoors</p>
+                        <img src="https://via.placeholder.com/500x400" alt="Post image">
+                    </div>
+                    <div class="post-stats">
+                        <span><i class="fas fa-thumbs-up"></i> 42</span>
+                        <span>12 comments</span>
+                        <span>3 shares</span>
+                    </div>
+                    <div class="post-actions">
+                        <button><i class="far fa-thumbs-up"></i> Like</button>
+                        <button><i class="far fa-comment"></i> Comment</button>
+                        <button><i class="fas fa-share"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="right-sidebar">
+            <div class="sponsored">
+                <h3>Sponsored</h3>
+                <div class="sponsored-item">
+                    <img src="https://via.placeholder.com/100" alt="Ad">
+                    <div>
+                        <h4>Try our new product</h4>
+                        <span>example.com</span>
+                    </div>
+                </div>
+                <div class="sponsored-item">
+                    <img src="https://via.placeholder.com/100" alt="Ad">
+                    <div>
+                        <h4>Summer Sale 50% off</h4>
+                        <span>shop.example.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="birthdays">
+                <h3>Birthdays</h3>
+                <div class="birthday-item">
+                    <i class="fas fa-birthday-cake"></i>
+                    <span><strong>Sarah Smith</strong> and <strong>2 others</strong> have birthdays today.</span>
+                </div>
+            </div>
+
+            <div class="contacts">
+                <div class="contacts-header">
+                    <h3>Contacts</h3>
+                    <div class="contact-icons">
+                        <i class="fas fa-video"></i>
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <div class="contact-list">
+                    <div class="contact">
+                        <div class="contact-status online"></div>
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Contact">
+                        <span>Sarah Smith</span>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-status online"></div>
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Contact">
+                        <span>Mike Johnson</span>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-status offline"></div>
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Contact">
+                        <span>Emma Wilson</span>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-status online"></div>
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Contact">
+                        <span>David Brown</span>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-status offline"></div>
+                        <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Contact">
+                        <span>Lisa Taylor</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="mobile-bottom-nav">
+        <a href="#" class="active"><i class="fas fa-home"></i></a>
+        <a href="#"><i class="fas fa-tv"></i></a>
+        <a href="#"><i class="fas fa-store"></i></a>
+        <a href="#"><i class="fas fa-bell"></i></a>
+        <a href="#"><i class="fas fa-bars"></i></a>
+    </div>
 </body>
 
 </html>
